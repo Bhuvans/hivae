@@ -1,0 +1,87 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'VAE_functions.py'
+ outputting to 'VAE_functions_v2.py'
+--------------------------------------------------------------------------------
+
+24:31: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+30:40: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+34:16: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+37:10: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+38:11: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+50:58: INFO: Added keywords to args of function 'tf.shape'
+54:34: INFO: Added keywords to args of function 'tf.nn.moments'
+64:32: INFO: Renamed 'tf.log' to 'tf.math.log'
+65:42: INFO: Added keywords to args of function 'tf.nn.moments'
+76:20: INFO: Renamed 'tf.log' to 'tf.math.log'
+92:13: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+93:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+93:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+97:17: INFO: Renamed 'tf.log' to 'tf.math.log'
+98:9: INFO: Renamed 'tf.log' to 'tf.math.log'
+98:17: INFO: Renamed 'tf.log' to 'tf.math.log'
+98:24: INFO: Renamed 'tf.random_uniform' to 'tf.random.uniform'
+109:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+110:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+110:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+111:17: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+112:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+112:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+117:10: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+125:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+126:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+126:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+127:17: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+128:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+128:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+133:10: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+148:58: INFO: Added keywords to args of function 'tf.shape'
+151:15: INFO: Added keywords to args of function 'tf.shape'
+154:16: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+155:48: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+155:48: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+160:17: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+161:48: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+161:48: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+172:24: INFO: Added keywords to args of function 'tf.reduce_logsumexp'
+173:58: INFO: Added keywords to args of function 'tf.reduce_sum'
+178:10: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+186:14: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+187:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+187:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+188:27: INFO: Added keywords to args of function 'tf.shape'
+218:58: INFO: Added keywords to args of function 'tf.shape'
+219:15: INFO: Added keywords to args of function 'tf.shape'
+250:58: INFO: Added keywords to args of function 'tf.shape'
+251:15: INFO: Added keywords to args of function 'tf.shape'
+283:58: INFO: Added keywords to args of function 'tf.shape'
+284:15: INFO: Added keywords to args of function 'tf.shape'
+407:17: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+408:44: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+408:44: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+409:18: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+410:40: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+410:40: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+431:53: INFO: tf.random_normal_initializer requires manual check. Initializers no longer have the dtype argument in the constructor or partition_info argument in the __call__ method.
+The calls have been converted to compat.v1 for safety (even though they may already have been correct).
+431:53: INFO: Renamed 'tf.random_normal_initializer' to 'tf.compat.v1.random_normal_initializer'
+--------------------------------------------------------------------------------
+
