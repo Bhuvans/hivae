@@ -2,7 +2,6 @@
 .idea 
 
 # Data and results.csv
-results/
 data/
 Results_csv/
 Saved_Networks/
