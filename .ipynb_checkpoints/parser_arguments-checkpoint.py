@@ -27,28 +27,36 @@ def getArgs(argv=None):
     return parser.parse_args(argv)
     
     
+class dotdict(dict):
+    """dot notation access to dictionary attributes. Will not work for nested dictionaries."""
+    __getattr__ = dict.get
+    __setattr__ = dict.__setitem__
+    __delattr__ = dict.__delitem__
+    
+    
 def getArgs_jupyter_notebook():
     params = dict()
     params['batch_size'] = 200
-    params['epochs'] = 501
+    params['epochs'] = 5
     params['perp'] = 10
     params['train'] = 1
     params['display'] = 1
     params['save'] = 1000
     params['restore'] = 0
     params['plot'] = 1
-    params['dim_latent_s'] = 10
+    params['dim_latent_s'] = 4
     params['dim_latent_z'] = 2
-    params['dim_latent_y'] = 10 
-    params['dim_latent_y_partition'] = [32, 32]
+    params['dim_latent_y'] = 3 
+    params['dim_latent_y_partition'] = []
     params['miss_perentage_train'] = 0.0
     params['miss_percentage_test'] = 0.0
     params['model_name'] = 'model_new'
-    params['save_file'] = 'new_mnist_zdim5_ydim10_4images_'
-    params['data_file'] = 'MNIST_data'
-    params['types_file'] = 'mnist_train_types2.csv'
-    params['miss_file'] = 'Missing_test.csv'
+    params['save_file'] = 'breast_data_zdim5_ydim10_4images_'
+    params['data_file'] = './Breast/data.csv'
+    params['types_file'] = './Breast/data_types.csv'
+    params['miss_file'] = './Breast/Missing40_4.csv'
     params['true_miss_file'] = ''
-    return params 
+    param_object = dotdict(params)
+    return param_object
 
     
